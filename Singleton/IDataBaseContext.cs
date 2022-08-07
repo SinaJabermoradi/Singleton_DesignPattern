@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Singleton
 {
-   public interface IDataBaseContext<T>
+   public interface IDataBaseContext<T> where T : IData
     {
         public static DataBaseContext<T> GetContext { get; }
 
